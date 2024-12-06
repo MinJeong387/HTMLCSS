@@ -3,6 +3,116 @@
 
 <head>
     <title>CSS 폰트 실습</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .serif {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .sans-serif {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .monospace {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* font-weight: 글꼴의 두께 
+            키워드로 정의
+        */
+        .font-weight > .lighter {
+            font-weight: lighter;
+        }
+
+        .font-weight > .normal {
+            font-weight: normal;
+        }
+
+        .font-weight > .bold {
+            font-weight: bold;
+        }
+
+        /* 수치로 정의 */
+        .font-weight > .n100 {
+            font-weight: 100;
+        }
+
+        .font-weight > .n400 {
+            font-weight: 400;
+        }
+
+        .font-weight > .n700 {
+            font-weight: 700;
+        }
+
+        /* font-style */
+        .font-style > .normal {
+            font-style: normal;
+        }
+
+        .font-style > .italic {
+            font-style: italic;
+        }
+
+        .font-style > .oblique {
+            font-style: oblique;
+        }
+
+        /* line-height */
+        .line-height > .n10 {
+            line-height: 1.0;
+        }
+
+        .line-height > .n15 {
+            line-height: 1.5;
+        }
+
+        .line-height > .n20 {
+            line-height: 2.0;
+        }
+
+        /* text-align */
+        .text-align {
+            border: 1px dotted red;
+        }
+
+        .text-align > .left {
+            text-align: left;
+        }
+
+        .text-align > .center {
+            text-align: center;
+        }
+
+        .text-align > .right {
+            text-align: right;
+        }
+
+        /* text-decoration */
+        .text-decoration > .none {
+            text-decoration: none;
+        }
+
+        .text-decoration > .line-through {
+            text-decoration: line-through;
+        }
+
+        .text-decoration > .underline {
+            text-decoration: underline;
+        }
+
+        .text-decoration > .overline {
+            text-decoration: overline;
+        }
+
+
+   
     </style>
 </head>
 
@@ -13,7 +123,7 @@
     <ul id="font-family">
         <li class="serif"><b>Serif</b>: 글자의 모서리에 작은 장식이 있는, 전통적인 스타일의 글꼴</li>
         <li class="sans-serif"><b>Sans-Serif</b>: 세리프가 없어 보다 깨끗하고 현대적인 느낌을 주는 글꼴</li>
-        <li class="monospace"><b>Monospace</b>: 모든 문자가 같은 너비를 차지하는, 균일한 간격의 글꼴</li>
+        <li class="monospace"><b>Monospace</b>: 모든 문자가 같은 너비를 차지하는, 균일한 간격의 글꼴  all words occupy the same width, have the same space</li>
     </ul>
 
     <h2>font-size</h2>
@@ -55,8 +165,8 @@
             line-height: 1.5
         </div>
         <div class="n20">
-            line-height: 1.5<br>
-            line-height: 1.5
+            line-height: 2.0<br>
+            line-height: 2.0
         </div>
     </div>
 
@@ -71,8 +181,9 @@
     <ul class="text-decoration">
         <li class="none">none</li>
         <li class="line-through">line-through</li>
-        <li class="underline">underline</li>
         <li class="overline">overline</li>
+        <li class="underline">underline</li>
+        
     </ul>
 
 </body>
