@@ -5,6 +5,60 @@
 <title>테이블</title>
 
 <style type="text/css" media="screen">
+	table, th, td {
+	border: #333 solid;
+    padding: 8px;
+    margin: 0;
+
+	border-left: none;
+	border-right: none;
+  	}
+
+	body {
+		font-family:"맑은 고딕", "돋움";
+		font-size: 0.75em;
+		color: #333;
+	}
+
+	.tbl-ex {
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+
+		border-collapse: collapse;		
+
+		
+	}
+
+	th {
+		background-color: #999;
+		font-size: 1.1em;
+		color: #fff;
+		border-top: #333 solid 4px;
+		border-bottom: #333 solid 4px;
+	}
+
+	td {
+		border: dotted;
+		border-left: none;
+		border-right: none;
+	}
+
+	tr:hover {
+		background-color: #fc6;
+		cursor: pointer;
+	}
+
+	tr:nth-child(2n+1) {
+		background-color: #E8ECF6;
+
+	}
+
+	tr:nth-child(2n+1):hover {
+		background-color: #fc6;
+		cursor: pointer;
+	}
+	
 
 </style>
 </head>
